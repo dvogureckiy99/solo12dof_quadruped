@@ -1,0 +1,10 @@
+ignition {
+  version: 2
+}
+
+worlds {
+  solo12dof_quadruped {
+    name: "world"
+    sdf: "world.sdf"
+  }
+}

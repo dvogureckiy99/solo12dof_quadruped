@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="solo12dof_quadruped">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz= "-0.43736695e-2 -0.07737584e-2 0.08102850e-2" 
+        rpy="0 0 0" />
+      <mass
+        value="1258.31807296e-3" />
+      <inertia
+        ixx="24223.93682550e-7"
+        ixy="-907.91818721e-7"
+        ixz="43.46649371e-7"
+        iyy="186672.18928423e-7"
+        iyz="-2.54822989e-7"
+        izz="206033.06774587e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo_12_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color 
+          rgba=" 0 0 0 0.65" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo_12_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+<!-- all hip_fe modules  -->
+<!-- FR -->
+  <link
+    name="link_fr_hip_fe">
+    <inertial>
+      <origin
+        xyz="-11.05511528e-2 0.46677473e-2 -0.00136777e-2"
+        rpy="0 0 0" />
+      <mass
+        value="143.68024490e-3" />
+      <inertia
+        ixx="275.90047445e-7"
+        ixy="249.97824669e-7"
+        ixz="-0.69884355e-7"
+        iyy="4013.39961851e-7"
+        iyz="0.03414311e-7"
+        izz="3989.03764786e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_fr.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_fr.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_hip_fe"
+    type="revolute">
+    <origin
+      xyz="0.2141 -0.0875 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_fr_hip_fe" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.443460952792061"
+      upper="1.3089969389957472"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- FL -->
+  <link
+    name="link_fl_hip_fe">
+    <inertial>
+      <origin
+        xyz="-10.98765927e-2 -0.46677473e-2 0.00136777e-2"
+        rpy="0 0 0" />
+      <mass
+        value="143.68024490e-3" />
+      <inertia
+        ixx="275.90047445e-7"
+        ixy="-254.50227212e-7"
+        ixz="0.71210009e-7"
+        iyy="3863.78054959e-7"
+        iyz="0.03414311e-7"
+        izz="3839.41857894e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_fl.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_fl.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_hip_fe"
+    type="revolute">
+    <origin
+      xyz="0.2141 0.0875 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_fl_hip_fe" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.3089969389957472"
+      upper="2.443460952792061"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- RR -->
+  <link
+    name="link_rr_hip_fe">
+    <inertial>
+      <origin
+        xyz="10.98765927e-2 0.46677473e-2 0.00136777e-2"
+        rpy="0 0 0" />
+      <mass
+        value="143.68024490e-3" />
+      <inertia
+        ixx="275.90047445e-7"
+        ixy="254.50227212e-7"
+        ixz="-0.71210009e-7"
+        iyy="3863.78054959e-7"
+        iyz="-0.03414311e-7"
+        izz="3839.41857894e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_hr.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_hr.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_hip_fe"
+    type="revolute">
+    <origin
+      xyz="-0.2141 -0.0875 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_rr_hip_fe" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.443460952792061"
+      upper="1.3089969389957472"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- RL -->
+  <link
+    name="link_rl_hip_fe">
+    <inertial>
+      <origin
+        xyz="11.05511528e-2 -0.46677473e-2 -0.00136777e-2"
+        rpy="0 0 0" />
+      <mass
+        value="143.68024490e-3" />
+      <inertia
+        ixx="275.90047445e-7"
+        ixy="249.97824669e-7"
+        ixz="0.69884355e-7"
+        iyy="4013.39961851e-7"
+        iyz="-0.03414311e-7"
+        izz="3989.03764786e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_hl.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_hip_fe_hl.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_hip_fe"
+    type="revolute">
+    <origin
+      xyz="-0.2141 0.0875 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_rl_hip_fe" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.3089969389957472"
+      upper="2.443460952792061"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- all ULM modules  -->
+<!-- FR -->
+  <link
+    name="link_fr_ULM">
+    <inertial>
+      <origin
+        xyz="-0.00174095e-2 -1.57310796e-2 -6.91454765e-2"
+        rpy="0 0 0" />
+      <mass
+        value="144.14222037e-3" />
+      <inertia
+        ixx="3814.98952871e-7"
+        ixy="-0.07326249e-7"
+        ixz="0.91813078e-7"
+        iyy="3789.60402317e-7"
+        iyz="-492.68237352e-7"
+        izz="325.88466892e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_upper_leg_right_side.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_upper_leg_right_side.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_ULM"
+    type="revolute">
+    <origin
+      xyz="-19.65e-3 -14e-3 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_fr_hip_fe" />
+    <child
+      link="link_fr_ULM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5707963267948966"
+      upper="1.5707963267948966"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- FL -->
+  <link
+    name="link_fl_ULM">
+    <inertial>
+      <origin
+        xyz="0.00174095e-2 1.57310796e-2 -6.91454765e-2"
+        rpy="0 0 0" />
+      <mass
+        value="144.14222037e-3" />
+      <inertia
+        ixx="3814.98952871e-7"
+        ixy="-0.07326249e-7"
+        ixz="-0.91813078e-7"
+        iyy="3789.60402317e-7"
+        iyz="492.68237352e-7"
+        izz="325.88466892e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_upper_leg_left_side.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_upper_leg_left_side.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_ULM"
+    type="revolute">
+    <origin
+      xyz="-19.65e-3 14e-3 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_fl_hip_fe" />
+    <child
+      link="link_fl_ULM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5707963267948966"
+      upper="1.5707963267948966"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- RR -->
+  <!-- <link
+    name="link_rr_ULM">
+    <inertial>
+      <origin
+        xyz="-0.00174095e-2 -1.57310796e-2 -6.91454765e-2"
+        rpy="0 0 0" />
+      <mass
+        value="144.14222037e-3" />
+      <inertia
+        ixx="3814.98952871e-7"
+        ixy="-0.07326249e-7"
+        ixz="0.91813078e-7"
+        iyy="3789.60402317e-7"
+        iyz="-492.68237352e-7"
+        izz="325.88466892e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_ULM"
+    type="revolute">
+    <origin
+      xyz="19.65e-3 -14e-3 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_rr_hip_fe" />
+    <child
+      link="link_rr_ULM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5707963267948966"
+      upper="1.5707963267948966"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+<!-- RL -->
+  <!-- <link
+    name="link_rl_ULM">
+    <inertial>
+      <origin
+        xyz="0.00174095e-2 1.57310796e-2 -6.91454765e-2"
+        rpy="0 0 0" />
+      <mass
+        value="144.14222037e-3" />
+      <inertia
+        ixx="3814.98952871e-7"
+        ixy="-0.07326249e-7"
+        ixz="-0.91813078e-7"
+        iyy="3789.60402317e-7"
+        iyz="492.68237352e-7"
+        izz="325.88466892e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_left_side.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_left_side.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_ULM"
+    type="revolute">
+    <origin
+      xyz="19.65e-3 14e-3 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_rl_hip_fe" />
+    <child
+      link="link_rl_ULM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5707963267948966"
+      upper="1.5707963267948966"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+<!-- all LLM modules  -->
+<!-- FR -->
+  <link
+    name="link_fr_LLM">
+    <inertial>
+      <origin
+        xyz="-0 -0.44121055e-2 -5.66875318e-2"
+        rpy="0 0 0" />
+      <mass
+        value="44.08831168e-3" />
+      <inertia
+        ixx="1484.45244047e-7"
+        ixy="-0.00000055e-7"
+        ixz="0.00000017e-7"
+        iyy="1481.80426492e-7"
+        iyz="-88.42737375e-7"
+        izz="39.73914276e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_LLM"
+    type="revolute">
+    <origin
+      xyz="0 -37e-3 -160e-3"
+      rpy="0 0 0" />
+    <parent
+      link="link_fr_ULM" />
+    <child
+      link="link_fr_LLM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.141592653589793"
+      upper="3.141592653589793"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!-- FL -->
+  <!-- <link
+    name="link_fl_LLM">
+    <inertial>
+      <origin
+        xyz="0 0.44121055e-2 -5.66875318e-2"
+        rpy="0 0 0" />
+      <mass
+        value="44.08831168e-3" />
+      <inertia
+        ixx="1484.45244047e-7"
+        ixy="-0.00000055e-7"
+        ixz="-0.00000017e-7"
+        iyy="1481.80426492e-7"
+        iyz="88.42737375e-7"
+        izz="39.73914276e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_LLM"
+    type="revolute">
+    <origin
+      xyz="0 37e-3 -160e-3"
+      rpy="0 0 0" />
+    <parent
+      link="link_fl_ULM" />
+    <child
+      link="link_fl_LLM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.141592653589793"
+      upper="3.141592653589793"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+<!-- RR -->
+  <!-- <link
+    name="link_rr_LLM">
+    <inertial>
+      <origin
+        xyz="-0 -0.44121055e-2 -5.66875318e-2"
+        rpy="0 0 0" />
+      <mass
+        value="44.08831168e-3" />
+      <inertia
+        ixx="1484.45244047e-7"
+        ixy="-0.00000055e-7"
+        ixz="0.00000017e-7"
+        iyy="1481.80426492e-7"
+        iyz="-88.42737375e-7"
+        izz="39.73914276e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_LLM"
+    type="revolute">
+    <origin
+      xyz="0 -37e-3 -160e-3"
+      rpy="0 0 0" />
+    <parent
+      link="link_rr_ULM" />
+    <child
+      link="link_rr_LLM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.141592653589793"
+      upper="3.141592653589793"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+<!-- RL -->
+  <!-- <link
+    name="link_rl_LLM">
+    <inertial>
+      <origin
+        xyz="0 0.44121055e-2 -5.66875318e-2"
+        rpy="0 0 0" />
+      <mass
+        value="44.08831168e-3" />
+      <inertia
+        ixx="1484.45244047e-7"
+        ixy="-0.00000055e-7"
+        ixz="-0.00000017e-7"
+        iyy="1481.80426492e-7"
+        iyz="88.42737375e-7"
+        izz="39.73914276e-7" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_LLM"
+    type="revolute">
+    <origin
+      xyz="0 37e-3 -160e-3"
+      rpy="0 0 0" />
+    <parent
+      link="link_rl_ULM" />
+    <child
+      link="link_rl_LLM" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.141592653589793"
+      upper="3.141592653589793"
+      effort="0"
+      velocity="0" />
+  </joint> -->
+</robot>
