@@ -111,13 +111,24 @@
             </link>
         </model>
 
+
+
+
         <model name="solo12dof_quadruped">
           <!-- Add other elements here -->
-          <pose>0 0 0.325 0 0 0.0</pose>
-          <include>
-            <!-- <uri>model://solo12dof_quadruped/urdf/solo12dof_quadruped.urdf</uri> -->
-            <uri>/home/dvogureckiy99/git/Solo12/src/solo12dof_quadruped/urdf/solo12dof_quadruped.urdf</uri>
-          </include>
+
+            <plugin name="my_robot_controller" filename="libMyRobotControllerPlugin.so">
+                <robotNamespace>/my_robot</robotNamespace>
+                <updateRate>1000.0</updateRate>
+                <left_wheel_joint>left_wheel_joint</left_wheel_joint>
+                <right_wheel_joint>right_wheel_joint</right_wheel_joint>
+            </plugin>
+
+            <pose>0 0 0.325 0 0 0.0</pose>
+                <include>
+                <!-- <uri>model://solo12dof_quadruped/urdf/solo12dof_quadruped.urdf</uri> -->
+                <uri>/home/dvogureckiy99/git/Solo12/src/solo12dof_quadruped/urdf/solo12dof_quadruped.urdf</uri>
+            </include>
         </model>
 
 
