@@ -401,7 +401,7 @@
       velocity="0" />
   </joint>
 <!-- RR -->
-  <!-- <link
+  <link
     name="link_rr_ULM">
     <inertial>
       <origin
@@ -423,7 +423,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+          filename="package://solo12_upper_leg_right_side.stl" />
       </geometry>
       <material
         name="">
@@ -437,7 +437,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+          filename="package://solo12_upper_leg_right_side.stl" />
       </geometry>
     </collision>
   </link>
@@ -458,9 +458,9 @@
       upper="1.5707963267948966"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RL -->
-  <!-- <link
+  <link
     name="link_rl_ULM">
     <inertial>
       <origin
@@ -517,7 +517,7 @@
       upper="1.5707963267948966"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- all LLM modules  -->
 <!-- FR -->
   <link
@@ -579,7 +579,7 @@
       velocity="0" />
   </joint>
 <!-- FL -->
-  <!-- <link
+  <link
     name="link_fl_LLM">
     <inertial>
       <origin
@@ -601,7 +601,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
       <material
         name="">
@@ -615,7 +615,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
     </collision>
   </link>
@@ -636,9 +636,9 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RR -->
-  <!-- <link
+  <link
     name="link_rr_LLM">
     <inertial>
       <origin
@@ -660,7 +660,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
       </geometry>
       <material
         name="">
@@ -674,7 +674,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
       </geometry>
     </collision>
   </link>
@@ -695,9 +695,9 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RL -->
-  <!-- <link
+  <link
     name="link_rl_LLM">
     <inertial>
       <origin
@@ -719,7 +719,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
       <material
         name="">
@@ -733,7 +733,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
     </collision>
   </link>
@@ -754,5 +754,5 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 </robot>
