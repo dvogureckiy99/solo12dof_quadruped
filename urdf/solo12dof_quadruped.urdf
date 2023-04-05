@@ -423,7 +423,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+          filename="package://solo12_upper_leg_right_side.stl" />
       </geometry>
       <material
         name="">
@@ -437,7 +437,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_right_side.stl" />
+          filename="package://solo12_upper_leg_right_side.stl" />
       </geometry>
     </collision>
   </link>
@@ -601,7 +601,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
       <material
         name="">
@@ -615,7 +615,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
     </collision>
   </link>
@@ -660,7 +660,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
       </geometry>
       <material
         name="">
@@ -674,7 +674,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_right_side.STL" />
+          filename="package://solo12_lower_leg_v2_right_side.STL" />
       </geometry>
     </collision>
   </link>
@@ -719,7 +719,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
       <material
         name="">
@@ -733,7 +733,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_lower_leg_v2_left_side.STL" />
+          filename="package://solo12_lower_leg_v2_left_side.STL" />
       </geometry>
     </collision>
   </link>
