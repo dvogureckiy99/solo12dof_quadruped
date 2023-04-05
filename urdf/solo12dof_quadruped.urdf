@@ -401,7 +401,7 @@
       velocity="0" />
   </joint>
 <!-- RR -->
-  <!-- <link
+  <link
     name="link_rr_ULM">
     <inertial>
       <origin
@@ -458,9 +458,9 @@
       upper="1.5707963267948966"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RL -->
-  <!-- <link
+  <link
     name="link_rl_ULM">
     <inertial>
       <origin
@@ -517,7 +517,7 @@
       upper="1.5707963267948966"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- all LLM modules  -->
 <!-- FR -->
   <link
@@ -579,7 +579,7 @@
       velocity="0" />
   </joint>
 <!-- FL -->
-  <!-- <link
+  <link
     name="link_fl_LLM">
     <inertial>
       <origin
@@ -636,9 +636,9 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RR -->
-  <!-- <link
+  <link
     name="link_rr_LLM">
     <inertial>
       <origin
@@ -695,9 +695,9 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 <!-- RL -->
-  <!-- <link
+  <link
     name="link_rl_LLM">
     <inertial>
       <origin
@@ -754,5 +754,5 @@
       upper="3.141592653589793"
       effort="0"
       velocity="0" />
-  </joint> -->
+  </joint>
 </robot>
