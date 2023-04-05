@@ -482,7 +482,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_left_side.stl" />
+          filename="package://solo12_upper_leg_left_side.stl" />
       </geometry>
       <material
         name="">
@@ -496,7 +496,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://solo12dof_quadruped/meshes/solo12_upper_leg_left_side.stl" />
+          filename="package://solo12_upper_leg_left_side.stl" />
       </geometry>
     </collision>
   </link>
