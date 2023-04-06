@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+  <param name="solo12dof_quadruped" command="$(find xacro)/xacro '$(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf'" />
+
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui">
+    <param name="use_gui" value="true"/>
+    <!-- <rosparam param="source_list">["/joint_states"]</rosparam> -->
+  </node>
+
+<!-- <node pkg="robot_state_publisher" type="state_publisher" name="rob_st_pub" >
+  <remap from="robot_description" to="dsolo12dof_quadruped" />
+</node> -->
+  <param name="robot_description" command="cat $(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz" />
+   <!-- args="-d $(find solo12dof_quadruped)/config/config.rviz" /> -->
+
+</launch>

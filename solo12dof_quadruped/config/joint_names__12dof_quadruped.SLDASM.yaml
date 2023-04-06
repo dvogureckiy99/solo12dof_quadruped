@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'hip_aa_rl', 'hip_fe_rl', 'ULM_rl', 'hip_aa_rr', 'hip_fe_rr', 'ULM_rr', 'hip_aa_fr', 'hip_fe_fr', 'ULM_fr', 'hip_aa_fl', 'hip_fe_fl', 'ULM_fl', ]
