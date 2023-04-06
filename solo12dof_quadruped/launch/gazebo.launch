@@ -1,6 +1,16 @@
 <launch>
-  <include
-    file="$(find gazebo_ros)/launch/empty_world.launch" />
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="paused" default="true"/>
+  <arg name="x" default="0.1" />
+  <arg name="y" default="-0.1" />
+  <arg name="z" default="0.5" />
+
+  <arg name="robot_name" default="solo12dof_quadruped" />
+
+  <include  file="$(find gazebo_ros)/launch/empty_world.launch" >
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+  
   <node
     name="tf_footprint_base"
     pkg="tf"
@@ -10,11 +20,14 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf -urdf -model solo12dof_quadruped"
-    output="screen" />
+    args="-file $(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf -urdf -model $(arg robot_name) -x $(arg x) -y $(arg y) -z $(arg z)"
+    output="screen" >
+  </node>  
+  
   <node
     name="fake_joint_calibration"
     pkg="rostopic"
     type="rostopic"
     args="pub /calibrated std_msgs/Bool true" />
+
 </launch>
