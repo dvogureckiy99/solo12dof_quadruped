@@ -16,6 +16,15 @@
     pkg="tf"
     type="static_transform_publisher"
     args="0 0 0 0 0 0 base_link base_footprint 40" />
+
+  <param name="solo12dof_quadruped" command="$(find xacro)/xacro '$(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf'" />
+
+  <param name="robot_description" command="cat $(find solo12dof_quadruped)/urdf/solo12dof_quadruped.urdf"/>
+
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    </node>
+   
   <node
     name="spawn_model"
     pkg="gazebo_ros"
